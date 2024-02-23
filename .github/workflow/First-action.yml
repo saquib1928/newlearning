@@ -1,1 +1,10 @@
-
+name: First Workflow   #name of your workflow 
+on: workflow_dispatch #when your workflow should be executed (manully ) 
+jobs:
+  first-job: 
+    runs on: ubuntu-latest 
+    steps: 
+      -name: Print greeting
+        run: echo "Hello World"
+      - name:Print goodbye
+        run: echo "Done - bye!"
